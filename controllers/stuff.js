@@ -64,8 +64,14 @@ exports.deleteThing = (req, res, next) => {
       });
 };
 
+/*
 exports.getAllThing = (req, res, next) => {
     Thing.find()
     .then(things => res.status(200).json(things))
     .catch(error => res.status(400).json({ error }));
+};
+*/
+
+exports.getAllThing = (req, res, next) => {
+  res.status(200).json({message: "YEAH !!"})
 };
